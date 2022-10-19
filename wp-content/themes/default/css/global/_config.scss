@@ -1,29 +1,35 @@
 // Sizes
 $base-font-size: 16px;
 $ratio: 1.414;
-$container: 1216px;
-$site-width: 1216px;
-
+$container: 1210px;
+$site-width: 1210px;
 // Colors
 $black: #333333;
-
+$white: #ffffff;
+$primary: #203942;
+$secondary: #c27047;
+$tertiary: #d6dbc4;
 // Fonts
-$primary-family: 'Helvetica', sans-serif;
-$alt-family: 'Open Sans', sans-serif;
-
+$primary-family: 'Casus Pro',
+serif;
+$secondary-family: 'Prospectus Std',
+serif;
+$alt-family:'Montserrat',
+sans-serif;
 // Media Queries
 $tablet-width: 768px;
 $phone-width: 767px;
+$phone-smaller-width: 550px;
 $header-width: 960px;
-
+$desktop-smaller-width: 1200px;
 $desktop: 'screen and (max-width: #{$container})';
+$desktop-smaller: 'screen and (max-width: #{$desktop-smaller-width})';
 $tablet: 'screen and (max-width: #{$tablet-width})';
 $phone: 'screen and (max-width: #{$phone-width})';
+$phone-smaller: 'screen and (max-width: #{$phone-smaller-width})';
 $header: 'screen and (max-width: #{$header-width})';
-
 // Transition
 $transition: all 0.25s ease-in;
-
 // Social Colors Guys, Social Colors
 $twitter: #00aced;
 $facebook: #3b5998;
@@ -46,14 +52,13 @@ $yahoo: #7B0099;
 $blogger: #fb8f3d;
 $soundcloud: #ff3a00;
 $github: #703083;
-
 // Functions
-@function trem( $px_value ) {
-    @return ( $px_value / $base-font-size ) + rem;
+@function trem( $px_value) {
+    @return ( $px_value / $base-font-size)+rem;
 }
 
 // Mixins
-@mixin transform( $transforms ) {
+@mixin transform( $transforms) {
     -moz-transform: $transforms;
     -o-transform: $transforms;
     -ms-transform: $transforms;
@@ -61,7 +66,7 @@ $github: #703083;
     transform: $transforms;
 }
 
-@mixin transform-origin( $origin ) {
+@mixin transform-origin( $origin) {
     -moz-transform-origin: $origin;
     -o-transform-origin: $origin;
     -ms-transform-origin: $origin;
@@ -69,7 +74,7 @@ $github: #703083;
     transform-origin: $origin;
 }
 
-@mixin transform-perspective( $perspective ) {
+@mixin transform-perspective( $perspective) {
     -moz-transform-perspective: $perspective;
     -o-transform-perspective: $perspective;
     -ms-transform-perspective: $perspective;
@@ -77,7 +82,7 @@ $github: #703083;
     transform-perspective: $perspective;
 }
 
-@mixin transition( $transition-property, $transition-time, $method ) {
+@mixin transition( $transition-property, $transition-time, $method) {
     -webkit-transition: $transition-property $transition-time $method;
     -moz-transition: $transition-property $transition-time $method;
     -ms-transition: $transition-property $transition-time $method;
@@ -90,7 +95,6 @@ $github: #703083;
     // And Firefox needs units with the delay number, even if it's 0.
     -webkit-animation: $name $duration $delay $iteration_count $timing_function $fill-mode;
     animation: $name $duration $delay $iteration_count $timing_function $fill-mode;
-
 }
 
 @mixin anything($property, $value) {

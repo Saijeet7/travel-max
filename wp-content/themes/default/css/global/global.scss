@@ -13,12 +13,12 @@ body {
     line-height: 1.375;
     font-family: $primary-family;
     color: #000000;
+    background-color: $primary;
 }
 
 a {
     text-decoration: none;
     transition: .3s;
-
     &:focus,
     &:active {
         outline: none;
@@ -31,11 +31,10 @@ a {
     padding-top: 0;
     height: 0;
     overflow: hidden;
-
     .video-js,
-    > iframe {
+    >iframe {
         position: absolute;
-        top:0;
+        top: 0;
         left: 0;
         width: 100%;
         height: 100%;
@@ -70,13 +69,12 @@ a {
 .container {
     max-width: $site-width;
     width: 100%;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
     box-sizing: border-box;
     margin: 0 auto;
-
     @media #{$phone} {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }

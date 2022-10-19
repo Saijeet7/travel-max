@@ -1,0 +1,272 @@
+    .footer {
+        padding: 80px 0 40px 0;
+    }
+    
+    .footer__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        @media #{$desktop-smaller} {
+            justify-content: center;
+            align-items: center;
+        }
+        .footer__card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 35px 135px 35px 40px;
+            font-family: $alt-family;
+            @include fsz(16px);
+            color: rgba(255, 255, 255, 0.75);
+            font-weight: 500;
+            p {
+                margin-bottom: 20px;
+                line-height: 1.375;
+            }
+            @media #{$desktop-smaller} {
+                margin-bottom: 20px;
+            }
+            @media #{$phone} {
+                padding: 35px;
+            }
+        }
+        .footer__card--border {
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 35px;
+            position: relative;
+            .footer__cardHead {
+                max-width: 300px;
+                width: 100%;
+                @media #{$desktop-smaller} {
+                    max-width: none;
+                }
+            }
+            .footer__cardButton {
+                display: flex;
+                justify-content: flex-end;
+            }
+            p {
+                max-width: 300px;
+                @media #{$desktop-smaller} {
+                    max-width: none;
+                }
+            }
+            &::after {
+                content: '';
+                background-image: url(uploads/pattern.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            &::before {
+                content: '';
+                background-image: url("data:image/svg+xml,%0A%3Csvg width='23' height='32' viewBox='0 0 23 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.7679 31.9988C21.5129 31.9988 21.2602 31.9199 21.0484 31.762L11.5 24.7134L1.95156 31.762C1.57617 32.0383 1.08286 32.0778 0.671374 31.8607C0.259886 31.646 0 31.2118 0 30.7357V5.47212C0 2.45481 0 3.05186 8.19549e-05 0L23 0C23 3.99924 23 2.45481 23 5.47212V30.7357C23 31.2118 22.7401 31.646 22.3286 31.8607C22.1506 31.9544 21.9605 31.9988 21.7679 31.9988Z' fill='%23C27047'/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 23px;
+                height: 32px;
+                position: absolute;
+                display: block;
+                top: 0;
+                right: 35px;
+                z-index: 1;
+            }
+        }
+    }
+    
+    .footer__cardHead {
+        font-family: $secondary-family;
+        color: $white;
+        @include fsz(30px);
+        font-weight: 700;
+        line-height: 1.1875;
+        margin-bottom: 10px;
+        @media #{$phone-smaller} {
+            @include fsz(20px);
+        }
+    }
+    
+    .footer__cardHead--large {
+        @include fsz(36px);
+        font-weight: 400;
+        letter-spacing: -0.02em;
+        font-family: $secondary-family;
+        margin-bottom: 35px;
+        color: rgba(255, 255, 255, 0.75);
+        strong {
+            font-weight: 400;
+            color: $white;
+        }
+        @media #{$phone-smaller} {
+            @include fsz(22px);
+        }
+    }
+    
+    .footer__inputField {
+        width: 100%;
+        height: 48px !important;
+        margin-bottom: 10px;
+        z-index: 2;
+        position: relative;
+    }
+    
+    .footer__info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    .footer__infoRow {
+        font-family: $alt-family;
+        @include fsz(20px);
+        color: rgba(255, 255, 255, 0.75);
+        font-weight: 500;
+        margin: 0 60px 60px 0;
+        color: rgba(255, 255, 255, 0.75);
+    }
+    
+    .footer__title {
+        font-family: $alt-family;
+        @include fsz(20px);
+        color: rgba(255, 255, 255, 0.75);
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    
+    .footer__logo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        @media #{$phone} {
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    
+    .footer__logoContent {
+        display: flex;
+        flex-wrap: wrap;
+        @media #{$phone} {
+            justify-content: center;
+            text-align: center;
+        }
+        @media #{$phone} {
+            margin-bottom: 20px;
+        }
+        .footer__img {
+            margin-right: 10px;
+            height: 80px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            @media #{$phone} {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
+    .footer__socialLink {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        position: relative;
+        @media #{$phone} {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            display: block;
+            background-color: rgba($white, 0.15);
+            left: 0;
+            top: 0;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            display: block;
+            background-color: rgba($white, 0.15);
+            left: 0;
+            bottom: 0;
+        }
+    }
+    
+    .footer__social {
+        margin: 0 20px;
+        svg {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    
+    .footer__navigation {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        position: relative;
+        @media #{$phone} {
+            flex-direction: column;
+            align-items: center;
+        }
+        li {
+            margin: 0 23px;
+            a {
+                font-family: $primary-family;
+                color: $white;
+                @include fsz(18px);
+                letter-spacing: -0.02em;
+            }
+            @media #{$phone} {
+                margin: 10px 0;
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            display: block;
+            background-color: rgba($white, 0.15);
+            left: 0;
+            bottom: 0;
+        }
+    }
+    
+    .footer__sponsor {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 18px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    .footer__copyright {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-family: $alt-family;
+        color: rgba(255, 255, 255, 0.75);
+        @include fsz(16px);
+        font-weight: 500;
+        p {
+            margin-bottom: 15px;
+        }
+    }
