@@ -25,7 +25,7 @@ the_post();
                     <h2 class="slider__title">List of easy trek for the first timers’</h2>
                 </div>
             </div>
-            <div class="slider__content">
+            <div class="slider__content">.
                 <figure class="slider__img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/slider1.jpg')">
                     <img class="screen-reader-text" src="<?php echo get_template_directory_uri() ?>/uploads/slider1.jpg" alt="Logo of Website" />
                     <span class="slider__mask"></span>
@@ -64,12 +64,49 @@ the_post();
                 </div>
                 <div class="textList__quote">
                     <h3 class="textList__quoteText">We aspire to be the world’s most trustable and progressive travel management company.</h3>
-                    <p>—  John shrestha, Founder</p>
+                    <p>— John shrestha, Founder</p>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <section class="cardSlider">
+        <h2 class="cardSlider__mainTitle">Explore <strong>Nepal with us</strong> </h2>
+        <h3 class="cardSlider__subTitle">Nepal is as old as the hills, and so are its Himalayas that were formed billions of years ago, and this is where the trekking trails lie.</h3>
+        <div class="cardSlider__slider">
+            <div class="cardSlider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/img1.jpg')">
+                <h3 class="cardSlider__price">USD 1,500</h3>
+                <h4 class="cardSlider__title">Everest Base Camp Trek via Gokyo Lakes</h4>
+                <p>12 Days, Setrenuous</p>
+            </div>
+            <div class="cardSlider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/img2.jpg')">
+                <h3 class="cardSlider__price">USD 1,500</h3>
+                <h4 class="cardSlider__title">Everest Base Camp Trek</h4>
+                <p>12 Days, Setrenuous</p>
+            </div>
+            <div class="cardSlider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/img3.jpg')">
+                <h3 class="cardSlider__price">USD 1,500</h3>
+                <h4 class="cardSlider__title">Annapurna Base Camp Trek</h4>
+                <p>12 Days, Setrenuous</p>
+            </div>
+            <div class="cardSlider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/img1.jpg')">
+                <h3 class="cardSlider__price">USD 1,500</h3>
+                <h4 class="cardSlider__title">Everest Base Camp Trek via Gokyo Lakes</h4>
+                <p>12 Days, Setrenuous</p>
+            </div>
+            <div class="cardSlider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/img2.jpg')">
+                <h3 class="cardSlider__price">USD 1,500</h3>
+                <h4 class="cardSlider__title">Everest Base Camp Trek</h4>
+                <p>12 Days, Setrenuous</p>
+            </div>
+            <div class="cardSlider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/img3.jpg')">
+                <h3 class="cardSlider__price">USD 1,500</h3>
+                <h4 class="cardSlider__title">Annapurna Base Camp Trek</h4>
+                <p>12 Days, Setrenuous</p>
+            </div>
+        </div>
+    </section>
+
     <?php include('modules/flex-content/flex-content.php') ?>
 </main>
 <?php get_footer(); ?>
