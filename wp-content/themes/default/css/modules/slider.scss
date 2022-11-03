@@ -1,3 +1,9 @@
+.slider {
+    @media #{$tablet} {
+        display: none;
+    }
+}
+
 .slider__content {
     position: relative;
 }
