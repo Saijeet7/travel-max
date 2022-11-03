@@ -1,4 +1,5 @@
 .slider {
+    background: $primary;
     @media #{$tablet} {
         display: none;
     }

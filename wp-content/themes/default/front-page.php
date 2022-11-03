@@ -13,7 +13,6 @@ the_post();
         </div>
     </section>
     <section class="slider">
-
         <div class="slider__slick">
             <div class="slider__content">
                 <figure class="slider__img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/slider1.jpg')">
@@ -116,11 +115,37 @@ the_post();
             </div>
             <div class="cfa__body">
                 <h3 class="cfa__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet justo at justo tempus semper</h3>
-                <button type="submit" class="button cfa__button "><strong>VIEW  ALL TRIPS</strong></button>
+                <button type="submit" class="button cfa__button "><strong>VIEW ALL TRIPS</strong></button>
             </div>
         </div>
     </section>
 
+    <section class="blogImg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/blog.jpg')">
+        <span class="blogImg__top-left"></span>
+        <span class="blogImg__top-right"></span>
+        <span class="blogImg__bottom-left"></span>
+        <span class="blogImg__bottom-right"></span>
+        <div class="container">
+            <h2 class="blogImg__head">STORIES FROM THE HIMALAYA</h2>
+            <div class="blogImg__body">
+                <div class="blogImg__text">
+                    <h3 class="blogImg__title">TRAVEL <strong>PHOTOGRAPHY</strong> at it’s <strong>best</strong></h3>
+                    <p>Nepal is as old as the hills, and so are its Himalayas that were formed billions of years ago, and this is where the trekking trails lie.</p>
+                </div>
+                <div class="blogImg__img">
+                    <div class="blogImg__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/blog1.jpg')">
+                        <h4 class="blogImg__imgTitle">Nepal Adventure</h4>
+                    </div>
+                    <div class="blogImg__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/blog2.jpg')">
+                        <h4 class="blogImg__imgTitle">Lower Dolpo Trek</h4>
+                    </div>
+                    <div class="blogImg__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/blog3.jpg')">
+                        <h4 class="blogImg__imgTitle">Sightseeing Kathmandu</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <?php include('modules/flex-content/flex-content.php') ?>
 </main>
 <?php get_footer(); ?>

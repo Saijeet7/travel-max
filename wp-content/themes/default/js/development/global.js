@@ -5,5 +5,4 @@ $(function() {
         slidesToScroll: 1,
         slidesToShow: 1,
     });
-
 });
