@@ -265,9 +265,109 @@ the_post();
             <h3 class="textBlock__subTitle">through Travel Max Guide</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet justo at justo tempus semper Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet justo at justo tempus semper</p>
             <button type="submit" class="button textBlock__button">
-                <svg class="icon blog">
+                <svg class="icon icon-blog">
                     <use xlink:href="#blog"></use>
                 </svg> Your Custom Trip</button>
+        </div>
+    </section>
+
+    <section class="review">
+        <div class="container">
+            <div class="review__rating review__rating--background">
+                <svg class="icon icon-star">
+                    <use xlink:href="#star"></use>
+                </svg>
+                <svg class="icon icon-star">
+                    <use xlink:href="#star"></use>
+                </svg>
+                <svg class="icon icon-star">
+                    <use xlink:href="#star"></use>
+                </svg>
+                <svg class="icon icon-star">
+                    <use xlink:href="#star"></use>
+                </svg>
+                <svg class="icon icon-star">
+                    <use xlink:href="#star"></use>
+                </svg>
+            </div>
+            <h2 class="review__title">All-Star adventure experience!</h2>
+            <div class="review__logoContainer">
+                <div class="review__logoContent">
+                    <div class="review__logo">
+                        <svg class="icon review__icon icon-logo1">
+                            <use xlink:href="#logo1"></use>
+                        </svg>
+                    </div>
+                    <div class="review__logo">
+                        <svg class="icon review__icon icon-logo2">
+                            <use xlink:href="#logo2"></use>
+                        </svg>
+                    </div>
+                    <div class="review__logo">
+                        <svg class="icon review__icon icon-logo3">
+                            <use xlink:href="#logo3"></use>
+                        </svg>
+                    </div>
+                    <div class="review__logo">
+                        <svg class="icon review__icon icon-logo4">
+                            <use xlink:href="#logo4"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="review__reviews">
+                <div class="review__content">
+                    <h3 class="review__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium, eros quis lacinia ultrices, urna nisl eleifend est, sed faucibus sem eros sit amt velit. Nam eu risus erat. pretium, eros quis lacinia ultrices, urna nisl eleifend est, sed faucibus sit amt velit. Nam eu risus erat. </h3>
+                    <div class="review__info">
+                        <div class="review__rating">
+                            <svg class="icon icon-star">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="icon icon-star">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="icon icon-star">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="icon icon-star">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="icon icon-star">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                        </div>
+                        <h4 class="review__name">John shrestha</h4>
+                        <h5 class="review__location">Everest Base Camp trek</h5>
+                    </div>
+                </div>
+                <div class="review__content">
+                    <h3 class="review__description">We aspire to be the world’s most trustable and progressive travel management company.</h3>
+                    <div class="review__info">
+                        <div class="review__rating">
+                            <svg class="icon icon-star">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="icon icon-star">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="icon icon-star">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="icon icon-star">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="icon icon-star">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                        </div>
+                        <h4 class="review__name">John shrestha</h4>
+                        <h5 class="review__location">Everest Base Camp trek</h5>
+                    </div>
+                </div>
+                <figure class="review__img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/trip.jpg')">
+                    <img class="screen-reader-text" src="<?php echo get_template_directory_uri() ?>/uploads/trip.jpg" alt="Logo of Website" />
+                </figure>
+            </div>
         </div>
     </section>
 
