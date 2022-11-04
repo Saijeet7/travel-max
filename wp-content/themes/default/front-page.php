@@ -233,7 +233,7 @@ the_post();
                             <h5 class="slideScroll__info">Trekking</h5>
                         </div>
                         <h6 class="slideScroll__description">Annapurna Circuit Trekking is a whole trek; it is your trek; it is the trek that the National Geographic has enlisted as the world’s best. Annapurna Circuit Trekking is not ...</h6>
-                        <button class="button slideScroll__button">VIEW DETAILS</button>
+                        <button type="submit" class="button slideScroll__button">VIEW DETAILS</button>
                     </div>
                 </div>
                 <div class="slideScroll__card">
@@ -252,12 +252,25 @@ the_post();
                             <h5 class="slideScroll__info">Trekking</h5>
                         </div>
                         <h6 class="slideScroll__description">Annapurna Circuit Trekking is a whole trek; it is your trek; it is the trek that the National Geographic has enlisted as the world’s best. Annapurna Circuit Trekking is not ...</h6>
-                        <button class="button slideScroll__button">VIEW DETAILS</button>
+                        <button type="submit" class="button slideScroll__button">VIEW DETAILS</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="textBlock">
+        <div class="container">
+            <h2 class="textBlock__title">UNLEASH <strong>your DREAM</strong></h2>
+            <h3 class="textBlock__subTitle">through Travel Max Guide</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet justo at justo tempus semper Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet justo at justo tempus semper</p>
+            <button type="submit" class="button textBlock__button">
+                <svg class="icon blog">
+                    <use xlink:href="#blog"></use>
+                </svg> Your Custom Trip</button>
+        </div>
+    </section>
+
     <?php include('modules/flex-content/flex-content.php') ?>
 </main>
 <?php get_footer(); ?>
