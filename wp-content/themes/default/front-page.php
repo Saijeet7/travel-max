@@ -146,6 +146,118 @@ the_post();
             </div>
         </div>
     </section>
+
+    <section class="slideScroll">
+        <div class="container">
+            <h2 class="slideScroll__head">We servce experiences that last long...</h2>
+            <div class="slideScroll__scrollerContainer">
+                <div class="slideScroll__scrollContent">
+                    <figure class="slideScroll__logo">
+                        <svg class="icon slideScroll__scroller trekking">
+                            <use xlink:href="#trekking"></use>
+                        </svg>
+                    </figure>
+                    <p>Trekking</p>
+                </div>
+                <div class="slideScroll__scrollContent">
+                    <figure class="slideScroll__logo">
+                        <svg class="icon slideScroll__scroller icon-dayTrip">
+                            <use xlink:href="#dayTrip"></use>
+                        </svg>
+                    </figure>
+                    <p>Day Trips</p>
+                </div>
+                <div class="slideScroll__scrollContent">
+                    <figure class="slideScroll__logo">
+                        <svg class="icon slideScroll__scroller heliTours">
+                            <use xlink:href="#heliTours"></use>
+                        </svg>
+                    </figure>
+                    <p>Heli Tours</p>
+                </div>
+                <div class="slideScroll__scrollContent slideScroll__scrollContent--active">
+                    <figure class="slideScroll__logo">
+                        <svg class="icon slideScroll__scroller mountaineering">
+                            <use xlink:href="#mountaineering"></use>
+                        </svg>
+                    </figure>
+                    <p>Mountaineering</p>
+                </div>
+                <div class="slideScroll__scrollContent">
+                    <figure class="slideScroll__logo">
+                        <svg class="icon slideScroll__scroller biking">
+                            <use xlink:href="#biking"></use>
+                        </svg>
+                    </figure>
+                    <p>Biking</p>
+                </div>
+                <div class="slideScroll__scrollContent">
+                    <figure class="slideScroll__logo">
+                        <svg class="icon slideScroll__scroller adventure">
+                            <use xlink:href="#adventure"></use>
+                        </svg>
+                    </figure>
+                    <p>Adventure</p>
+                </div>
+                <div class="slideScroll__scrollContent">
+                    <figure class="slideScroll__logo">
+                        <svg class="icon slideScroll__scroller volunteering">
+                            <use xlink:href="#volunteering"></use>
+                        </svg>
+                    </figure>
+                    <p>Volunteering</p>
+                </div>
+                <div class="slideScroll__scrollContent">
+                    <figure class="slideScroll__logo">
+                        <svg class="icon slideScroll__scroller wildlifeSafari">
+                            <use xlink:href="#wildlifeSafari"></use>
+                        </svg>
+                    </figure>
+                    <p>Wildlife Safari</p>
+                </div>
+            </div>
+            <div class="slideScroll__cardContainer">
+                <div class="slideScroll__card">
+                    <figure class="sliderScroll__img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/card1.jpg')">
+                        <img class="screen-reader-text" src="<?php echo get_template_directory_uri() ?>/uploads/card1.jpg" alt="Logo of Website" />
+                    </figure>
+                    <div class="sliderScroll__cardConatiner">
+                        <div class="slideScroll__tags">
+                            <h3 class="slideScroll__tag">USD 1,500</h3>
+                            <h3 class="slideScroll__tag slideScroll__tag--alt">New Trip</h3>
+                        </div>
+                        <h4 class="slideScroll__title">Everest Base Camp Trek via Gokyo Lakes</h4>
+                        <div class="slideScroll__information">
+                            <h5 class="slideScroll__info">12 Days</h5>
+                            <h5 class="slideScroll__info">Setrenuous</h5>
+                            <h5 class="slideScroll__info">Trekking</h5>
+                        </div>
+                        <h6 class="slideScroll__description">Annapurna Circuit Trekking is a whole trek; it is your trek; it is the trek that the National Geographic has enlisted as the world’s best. Annapurna Circuit Trekking is not ...</h6>
+                        <button class="button slideScroll__button">VIEW DETAILS</button>
+                    </div>
+                </div>
+                <div class="slideScroll__card">
+                    <figure class="sliderScroll__img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/card1.jpg')">
+                        <img class="screen-reader-text" src="<?php echo get_template_directory_uri() ?>/uploads/card1.jpg" alt="Logo of Website" />
+                    </figure>
+                    <div class="sliderScroll__cardConatiner">
+                        <div class="slideScroll__tags">
+                            <h3 class="slideScroll__tag">USD 1,500</h3>
+                            <h3 class="slideScroll__tag slideScroll__tag--alt">Popular</h3>
+                        </div>
+                        <h4 class="slideScroll__title">Everest Base Camp Trek via Gokyo Lakes</h4>
+                        <div class="slideScroll__information">
+                            <h5 class="slideScroll__info">12 Days</h5>
+                            <h5 class="slideScroll__info">Setrenuous</h5>
+                            <h5 class="slideScroll__info">Trekking</h5>
+                        </div>
+                        <h6 class="slideScroll__description">Annapurna Circuit Trekking is a whole trek; it is your trek; it is the trek that the National Geographic has enlisted as the world’s best. Annapurna Circuit Trekking is not ...</h6>
+                        <button class="button slideScroll__button">VIEW DETAILS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <?php include('modules/flex-content/flex-content.php') ?>
 </main>
 <?php get_footer(); ?>
