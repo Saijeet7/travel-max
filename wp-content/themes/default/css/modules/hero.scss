@@ -1,5 +1,6 @@
 .hero {
     background: $primary;
+    position: relative;
     .container {
         display: flex;
         flex-direction: column;
@@ -8,6 +9,19 @@
         text-align: center;
         position: relative;
         margin: 88px auto;
+    }
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: {
+            image: url('uploads/heroPattern.png');
+            size: cover;
+        }
     }
 }
 
@@ -82,11 +96,19 @@
 }
 
 .hero__searchBar {
+    position: absolute;
+    bottom: 20px;
+}
+
+.hero__search {
+    text-align: center;
+    font-family: $primary-family;
+    @include fsz(20px);
     width: 700px;
     height: 80px;
     border-radius: 50px !important;
-    position: absolute;
-    bottom: 20px;
+    font-weight: 400;
+    position: relative;
     @media #{$desktop-smaller} {
         width: 600px;
     }
@@ -101,6 +123,28 @@
     }
     @media #{$phone-smaller} {
         bottom: -60px;
-        width: 300px;
+        width: 350px;
+    }
+}
+
+.hero__searchIcon {
+    position: absolute;
+    top: 22px;
+    left: 260px;
+    @include fsz(24px);
+    color: $primary;
+    @media #{$desktop-smaller} {
+        left: 200px;
+    }
+    @media #{$header} {
+        left: 160px;
+    }
+    @media #{$phone} {
+        left: 110px;
+        top: 52px;
+    }
+    @media #{$phone-smaller} {
+        left: 60px;
+        top: 82px;
     }
 }

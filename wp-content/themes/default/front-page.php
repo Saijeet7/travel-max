@@ -9,9 +9,11 @@ the_post();
                 <p>Offering 20% discount on selected trips</p>
             </div>
             <h1 class="hero__title">Explore Beyond the<br><strong>Himalayas</strong></h1>
-            <input type="text" class="hero__searchBar">
+            <div class="hero__searchBar"> <input type="text" class="hero__search" placeholder="Your Next Trip"><i class="hero__searchIcon fas fa-search"></i></input>
+            </div>
         </div>
     </section>
+
     <section class="slider">
         <div class="slider__slick">
             <div class="slider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/slider1.jpg')">
