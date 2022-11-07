@@ -1,6 +1,9 @@
 .slideScroll {
     background-color: $tertiary-light;
     padding-top: 90px;
+    @media #{$phone} {
+        padding-top: 45px;
+    }
     .container {
         display: flex;
         flex-direction: column;
@@ -20,6 +23,9 @@
     margin-bottom: 25px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    @media #{$phone} {
+        text-align: center;
+    }
 }
 
 .slideScroll__scrollerContainer {

@@ -1,8 +1,5 @@
 .slider {
     background: $primary;
-    @media #{$tablet} {
-        display: none;
-    }
 }
 
 .slider__content {
@@ -105,4 +102,10 @@
     line-height: 1;
     position: relative;
     z-index: 4;
+    @media #{$header} {
+        @include fsz(48px);
+    }
+    @media #{$phone} {
+        @include fsz(34px);
+    }
 }

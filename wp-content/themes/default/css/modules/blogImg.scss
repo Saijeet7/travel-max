@@ -8,6 +8,13 @@
     @media #{$desktop-smaller} {
         height: 650px;
     }
+    @media #{$desktop-smaller} {
+        padding-bottom: 0;
+        margin-bottom: 50px;
+    }
+    @media #{$phone} {
+        margin-bottom: 100px;
+    }
     background: {
         size: cover;
         repeat: no-repeat;
@@ -92,6 +99,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    @media #{$phone} {
+        padding: 35px 10px 35px 10px;
+    }
     @media #{$desktop-smaller} {
         top: 20px;
     }
@@ -143,9 +153,6 @@
     line-height: 1.6;
     max-width: 450px;
     @media #{$desktop-smaller} {
-        max-width: 350px;
-    }
-    @media #{$phone} {
         max-width: 100%;
         text-align: center;
     }

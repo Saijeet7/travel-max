@@ -3,6 +3,7 @@ get_header();
 the_post();
 ?>
 <main class="page__home">
+    <div class="wrapper">
     <section class="hero">
         <div class="container">
             <div class="hero__banner">
@@ -382,5 +383,6 @@ the_post();
     </section>
 
     <?php include('modules/flex-content/flex-content.php') ?>
+    </div>
 </main>
 <?php get_footer(); ?>

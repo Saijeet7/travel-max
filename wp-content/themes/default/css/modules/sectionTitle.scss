@@ -15,6 +15,15 @@
         padding: 105px 0 0 0;
         position: relative;
         text-align: center;
+        @media #{$desktop-smaller} {
+            padding: 80px 0 0 0;
+        }
+        @media #{$header} {
+            padding: 60px 0 0 0;
+        }
+        @media #{$phone} {
+            padding: 20px 0 0 0;
+        }
     }
 }
 
@@ -28,9 +37,11 @@
     z-index: 10;
     @media #{$header} {
         @include fsz(55px);
+        margin-bottom: 15px;
     }
     @media #{$phone} {
         @include fsz(40px);
+        margin-bottom: 10px;
     }
     strong {
         position: relative;
@@ -85,5 +96,11 @@
         @media #{$phone} {
             display: none;
         }
+    }
+    @media #{$header} {
+        margin-bottom: 30px;
+    }
+    @media #{$phone} {
+        margin-bottom: 20px;
     }
 }

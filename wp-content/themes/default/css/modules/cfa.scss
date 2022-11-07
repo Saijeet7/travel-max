@@ -29,6 +29,9 @@
             @include fsz(60px);
             margin-bottom: 20px;
         }
+        @media #{$phone} {
+            @include fsz(48px);
+        }
     }
     @media #{$header} {
         max-width: 400px;

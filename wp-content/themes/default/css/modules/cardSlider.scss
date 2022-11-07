@@ -18,6 +18,12 @@
     z-index: 0;
     margin-left: 12px;
     margin-right: 13px;
+    @media #{$header} {
+        height: 520px;
+    }
+    @media #{$phone} {
+        height: 420px;
+    }
     background: {
         size: cover;
         repeat: no-repeat;
@@ -32,6 +38,15 @@
         padding: 4px 13px;
         border-radius: 36px;
         margin: 450px auto 10px auto;
+        @media #{$desktop-smaller} {
+            margin: 350px auto 10px auto;
+        }
+        @media #{$header} {
+            margin: 150px auto 10px auto;
+        }
+        @media #{$phone} {
+            margin: 120px auto 10px auto;
+        }
         max-width: 100px;
     }
     .cardSlider__title {
@@ -76,6 +91,9 @@
     background-color: $secondary-light;
     position: absolute;
     top: 45%;
+    @media #{$phone} {
+        display: none;
+    }
     &::before {
         content: "";
         width: 100%;

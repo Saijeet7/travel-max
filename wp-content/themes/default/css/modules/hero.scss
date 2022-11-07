@@ -9,6 +9,12 @@
         text-align: center;
         position: relative;
         margin: 88px auto;
+        @media #{$header} {
+            margin: 68px auto;
+        }
+        @media #{$phone} {
+            margin: 38px auto;
+        }
     }
     &::before {
         content: '';
