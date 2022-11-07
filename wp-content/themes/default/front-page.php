@@ -30,6 +30,21 @@ the_post();
                     <h2 class="slider__title">List of easy trek for the first timers’</h2>
                 </div>
             </div>
+            <div class="slider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/slider1.jpg')">
+                <span class="slider__mask"></span>
+                <div class="slider__innerContent">
+                    <p>Play Video <br><strong>2:53</strong></p>
+                    <h2 class="slider__title">List of easy trek for the first timers’</h2>
+                </div>
+            </div>
+            <div class="slider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/slider1.jpg')">
+                <span class="slider__mask"></span>
+                <div class="slider__innerContent">
+                    <p>Play Video <br><strong>2:53</strong></p>
+                    <h2 class="slider__title">List of easy trek for the first timers’</h2>
+                </div>
+            </div>
+
         </div>
     </section>
 
