@@ -176,8 +176,6 @@
 
 .blogImg__img {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
     @media #{$phone} {
         justify-content: center;
     }
@@ -186,16 +184,11 @@
 .blogImg__image {
     height: 100%;
     min-height: 290px;
-    margin-left: 10px;
     border-radius: 100px;
     display: flex;
     align-items: flex-end;
     margin-bottom: 20px;
-    background: {
-        size: cover;
-        repeat: no-repeat;
-        position: center;
-    }
+    border-right: 10px solid $tertiary;
     .blogImg__imgTitle {
         @include fsz(15px);
         font: {
@@ -206,6 +199,23 @@
         text-align: center;
         width: 100%;
         max-width: 110px;
-        padding: 0 5px 35px 5px;
+        padding: 0 5px 35px 15px;
+        @media #{$phone-smaller} {
+            @include fsz(10px);
+        }
+    }
+    background: {
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    }
+    &:nth-child(1) {
+        position: relative;
+        left: 20px;
+        z-index: 2;
+    }
+    &:nth-child(2) {
+        position: relative;
+        left: 10px;
     }
 }

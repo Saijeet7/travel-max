@@ -14,31 +14,15 @@ the_post();
     </section>
     <section class="slider">
         <div class="slider__slick">
-            <div class="slider__content">
-                <figure class="slider__img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/slider1.jpg')">
-                    <img class="screen-reader-text" src="<?php echo get_template_directory_uri() ?>/uploads/slider1.jpg" alt="Logo of Website" />
-                    <span class="slider__mask"></span>
-                </figure>
+            <div class="slider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/slider1.jpg')">
+                <span class="slider__mask"></span>
                 <div class="slider__innerContent">
                     <p>Play Video <br><strong>2:53</strong></p>
                     <h2 class="slider__title">List of easy trek for the first timers’</h2>
                 </div>
             </div>
-            <div class="slider__content">.
-                <figure class="slider__img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/slider1.jpg')">
-                    <img class="screen-reader-text" src="<?php echo get_template_directory_uri() ?>/uploads/slider1.jpg" alt="Logo of Website" />
-                    <span class="slider__mask"></span>
-                </figure>
-                <div class="slider__innerContent">
-                    <p>Play Video <br><strong>2:53</strong></p>
-                    <h2 class="slider__title">List of easy trek for the first timers’</h2>
-                </div>
-            </div>
-            <div class="slider__content">
-                <figure class="slider__img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/slider1.jpg')">
-                    <img class="screen-reader-text" src="<?php echo get_template_directory_uri() ?>/uploads/slider1.jpg" alt="Logo of Website" />
-                    <span class="slider__mask"></span>
-                </figure>
+            <div class="slider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/slider1.jpg')">
+                <span class="slider__mask"></span>
                 <div class="slider__innerContent">
                     <p>Play Video <br><strong>2:53</strong></p>
                     <h2 class="slider__title">List of easy trek for the first timers’</h2>
@@ -69,44 +53,52 @@ the_post();
         </div>
     </section>
 
+    <section class="sectionTitle">
+        <div class="container">
+            <h2 class="sectionTitle__mainTitle">Explore <strong>Nepal with us</strong> </h2>
+            <div class="sectionTitle__desc">
+                <h3 class="sectionTitle__introDes">Nepal is as old as the hills, and so are its Himalayas that were formed billions of years ago, and this is where the trekking trails lie.</h3>
+            </div>
+    </section>
+
     <section class="cardSlider">
         <div class="container">
-            <h2 class="cardSlider__mainTitle">Explore <strong>Nepal with us</strong> </h2>
-            <h3 class="cardSlider__introDes">Nepal is as old as the hills, and so are its Himalayas that were formed billions of years ago, and this is where the trekking trails lie.</h3>
-            <div class="cardSlider__slider">
-                <div class="cardSlider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/img1.jpg')">
-                    <h3 class="cardSlider__price">USD 1,500</h3>
-                    <h4 class="cardSlider__title">Everest Base Camp Trek via Gokyo Lakes</h4>
-                    <p>12 Days, Setrenuous</p>
-                </div>
-                <div class="cardSlider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/img2.jpg')">
-                    <h3 class="cardSlider__price">USD 1,500</h3>
-                    <h4 class="cardSlider__title">Everest Base Camp Trek</h4>
-                    <p>12 Days, Setrenuous</p>
-                </div>
-                <div class="cardSlider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/img3.jpg')">
-                    <h3 class="cardSlider__price">USD 1,500</h3>
-                    <h4 class="cardSlider__title">Annapurna Base Camp Trek</h4>
-                    <p>12 Days, Setrenuous</p>
-                </div>
-                <div class="cardSlider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/img1.jpg')">
-                    <h3 class="cardSlider__price">USD 1,500</h3>
-                    <h4 class="cardSlider__title">Everest Base Camp Trek via Gokyo Lakes</h4>
-                    <p>12 Days, Setrenuous</p>
-                </div>
-                <div class="cardSlider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/img2.jpg')">
-                    <h3 class="cardSlider__price">USD 1,500</h3>
-                    <h4 class="cardSlider__title">Everest Base Camp Trek</h4>
-                    <p>12 Days, Setrenuous</p>
-                </div>
-                <div class="cardSlider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/img3.jpg')">
-                    <h3 class="cardSlider__price">USD 1,500</h3>
-                    <h4 class="cardSlider__title">Annapurna Base Camp Trek</h4>
-                    <p>12 Days, Setrenuous</p>
-                </div>
+            <div class="cardSlider__line"></div>
+        </div>
+        <div class="cardSlider__slider">
+            <div class="cardSlider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/img1.jpg')">
+                <h3 class="cardSlider__price">USD 1,500</h3>
+                <h4 class="cardSlider__title">Everest Base Camp Trek via Gokyo Lakes</h4>
+                <h5 class="cardSlider__days">12 Days, Setrenuous</h5>
+            </div>
+            <div class="cardSlider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/img2.jpg')">
+                <h3 class="cardSlider__price">USD 1,500</h3>
+                <h4 class="cardSlider__title">Everest Base Camp Trek</h4>
+                <h5 class="cardSlider__days">12 Days, Setrenuous</h5>
+            </div>
+            <div class="cardSlider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/img3.jpg')">
+                <h3 class="cardSlider__price">USD 1,500</h3>
+                <h4 class="cardSlider__title">Annapurna Base Camp Trek</h4>
+                <h5 class="cardSlider__days">12 Days, Setrenuous</h5>
+            </div>
+            <div class="cardSlider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/img1.jpg')">
+                <h3 class="cardSlider__price">USD 1,500</h3>
+                <h4 class="cardSlider__title">Everest Base Camp Trek via Gokyo Lakes</h4>
+                <h5 class="cardSlider__days">12 Days, Setrenuous</h5>
+            </div>
+            <div class="cardSlider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/img2.jpg')">
+                <h3 class="cardSlider__price">USD 1,500</h3>
+                <h4 class="cardSlider__title">Everest Base Camp Trek</h4>
+                <h5 class="cardSlider__days">12 Days, Setrenuous</h5>
+            </div>
+            <div class="cardSlider__content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/img3.jpg')">
+                <h3 class="cardSlider__price">USD 1,500</h3>
+                <h4 class="cardSlider__title">Annapurna Base Camp Trek</h4>
+                <h5 class="cardSlider__days">12 Days, Setrenuous</h5>
             </div>
         </div>
     </section>
+
 
     <section class="cfa">
         <div class="container">
@@ -133,7 +125,7 @@ the_post();
                     <p>Nepal is as old as the hills, and so are its Himalayas that were formed billions of years ago, and this is where the trekking trails lie.</p>
                 </div>
                 <div class="blogImg__img">
-                    <div class="blogImg__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/blog1.jpg')">
+                    <div class="blogImg__image blogImg__image--first" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/blog1.jpg')">
                         <h4 class="blogImg__imgTitle">Nepal Adventure</h4>
                     </div>
                     <div class="blogImg__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/uploads/blog2.jpg')">
@@ -144,6 +136,7 @@ the_post();
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 

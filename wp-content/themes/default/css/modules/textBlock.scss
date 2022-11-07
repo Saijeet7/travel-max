@@ -29,10 +29,12 @@
         top: 0;
         left: 0;
         display: block;
-        background: url(./uploads/heroPattern.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        background: {
+            image: url(./uploads/background.png);
+            repeat: no-repeat;
+            size: cover;
+            position: center;
+        }
     }
 }
 

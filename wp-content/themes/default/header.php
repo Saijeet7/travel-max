@@ -20,6 +20,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -35,7 +37,7 @@
         <div class="container">
             <div class="logo__container">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="logo__link">
-                <figure class="logo__wrap">
+                    <figure class="logo__wrap">
                         <img class="header__image" src="<?php echo get_template_directory_uri() ?>/uploads/logo.png" alt="Logo of Website" />
                     </figure>
                     <meta itemprop="name" content="<?php bloginfo('name'); ?>">

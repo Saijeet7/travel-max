@@ -58,8 +58,10 @@
         @include fsz(25px);
     }
     strong {
+        font-family: $secondary-family;
         @include fsz(230px);
         letter-spacing: -0.05em;
+        font-weight: 400;
         background: linear-gradient(189.82deg, #FFFFFF 20.61%, #203842 86.39%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

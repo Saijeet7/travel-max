@@ -10,6 +10,9 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        @media #{$phone} {
+            display: none;
+        }
     }
     .container {
         padding: 120px 24px;
