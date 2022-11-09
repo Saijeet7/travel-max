@@ -10,8 +10,26 @@
 @font-face {
     font-family: 'Prospectus Std';
     src: local('Prospectus Std');
-    src: url(fonts/ProspectusProSDEMO-Regular.woff);
-    src: url(fonts/ProspectusProSDEMO-Regular.woff2);
+    src: url(fonts/ProspectusStdReg.woff);
+    src: url(fonts/ProspectusStdReg.woff2);
     font-style: normal;
     font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Prospectus Std';
+    src: local('Prospectus Std');
+    src: url(fonts/ProspectusStdBld.woff);
+    src: url(fonts/ProspectusStd-Bld.woff2);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Prospectus Std';
+    src: local('Prospectus Std');
+    src: url(fonts/ProspectusStd-Blk.woff);
+    src: url(fonts/ProspectusStd-Blk.woff2);
+    font-style: normal;
+    font-weight: 900;
 }

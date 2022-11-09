@@ -1,0 +1,264 @@
+.slideScroll {
+    background-color: $tertiary-light;
+    padding-top: 90px;
+    @media #{$phone} {
+        padding-top: 45px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.slideScroll__head {
+    color: $primary;
+    @include fsz(20px);
+    font: {
+        family: $alt-family;
+        weight: 700;
+    }
+    line-height: 1.6;
+    margin-bottom: 25px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    @media #{$phone} {
+        text-align: center;
+    }
+}
+
+.slideScroll__scrollerContainer {
+    background-color: $white;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 24px 115px;
+    border: 1px solid rgba(32, 57, 66, 0.25);
+    border-radius: 103px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 57px;
+    @media #{$desktop-smaller} {
+        padding: 24px 110px;
+    }
+    @media #{$phone} {
+        padding: 24px 60px;
+    }
+}
+
+.slideScroll__scrollContent {
+    @include fsz(12px);
+    font: {
+        family: $alt-family;
+        weight: 700;
+    }
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+    margin-right: 30px;
+    position: relative;
+    @media #{$header} {
+        margin-right: 20px;
+    }
+    @media #{$phone} {
+        margin-right: 10px;
+    }
+    p {
+        z-index: 3;
+        position: relative;
+        @media #{$desktop-smaller} {
+            display: none;
+        }
+    }
+}
+
+.slideScroll__scroller {
+    position: relative;
+    width: 100%;
+    max-width: 44px;
+    max-height: 44px;
+    height: 100%;
+    color: $primary;
+    position: relative;
+    z-index: 2;
+    @media #{$header} {
+        max-width: 31px;
+        max-height: 31px;
+    }
+    @media #{$phone} {
+        max-width: 20px;
+        max-height: 20px;
+    }
+}
+
+.slideScroll__scrollContent--active {
+    background-color: $secondary;
+    color: $white;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        background: {
+            image: url('uploads/path.png');
+            repeat: no-repeat;
+            size: cover;
+        }
+        z-index: 2;
+        top: -30px;
+        bottom: -37px;
+        left: -8px;
+        right: -8px;
+    }
+}
+
+.slideScroll__cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slideScroll__card {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background: $white;
+    margin-bottom: 50px;
+    @media #{$header} {
+        flex-direction: column;
+    }
+}
+
+.sliderScroll__img {
+    width: 320px;
+    height: 427px;
+    @media #{$header} {
+        width: 100%;
+    }
+    background: {
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    }
+}
+
+.slideScroll__tags {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 35px 0 10px 40px;
+}
+
+.slideScroll__tag {
+    background: $primary;
+    color: $white;
+    @include fsz(13px);
+    font: {
+        family: $alt-family;
+        weight: 600;
+    }
+    margin-right: 10px;
+    border-radius: 2px;
+    padding: 5px 12px;
+}
+
+.slideScroll__tag--alt {
+    color: $primary;
+    background-color: $secondary-light;
+}
+
+.slideScroll__title {
+    color: $primary;
+    @include fsz(36px);
+    font: {
+        family: $secondary-family;
+        weight: 700;
+    }
+    width: 100%;
+    max-width: 470px;
+    @media #{$header} {
+        max-width: 100%;
+    }
+    padding: 0 40px;
+    text-transform: capitalize;
+    letter-spacing: -0.02em;
+    @media #{$header} {
+        @include fsz(32px);
+    }
+    @media #{$phone} {
+        @include fsz(28px);
+    }
+}
+
+.slideScroll__information {
+    background-color: rgba($quartery, 0.6);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 7px 40px;
+    margin-bottom: 15px;
+}
+
+.slideScroll__info {
+    @include fsz(16px);
+    font: {
+        family: $alt-family;
+        weight: 600;
+    }
+    color: $secondary;
+    margin-right: 32px;
+    opacity: 1;
+    &:nth-child(1),
+    &:nth-child(2) {
+        position: relative;
+        &:after {
+            width: 2px;
+            height: 36px;
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: $white;
+            right: -15px;
+            top: -7px;
+        }
+    }
+}
+
+.slideScroll__description {
+    color: $primary;
+    @include fsz(17px);
+    font: {
+        family: $alt-family;
+        weight: 500;
+    }
+    line-height: 1.5;
+    padding: 0 40px;
+    max-width: 470px;
+    margin-bottom: 20px;
+    @media #{$header} {
+        max-width: 100%;
+    }
+}
+
+.slideScroll__button {
+    border-radius: 60px;
+    margin: 0 35px 35px 35px;
+    position: relative;
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        background: {
+            image: url("uploads/buttonBack.png");
+            size: cover;
+            repeat: no-repeat;
+            position: center;
+        }
+    }
+}

@@ -1,0 +1,125 @@
+.cardSlider {
+    background-color: $tertiary;
+    position: relative;
+}
+
+.cardSlider__line {
+    width: 100%;
+    height: 25px;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: rgba(32, 57, 66, 0.25);
+}
+
+.cardSlider__content {
+    width: 420px;
+    height: 620px;
+    position: relative;
+    z-index: 0;
+    margin-left: 12px;
+    margin-right: 13px;
+    @media #{$header} {
+        height: 520px;
+    }
+    @media #{$phone} {
+        height: 420px;
+    }
+    background: {
+        size: cover;
+        repeat: no-repeat;
+    }
+    .cardSlider__price {
+        font-family: $alt-family;
+        @include fsz(13px);
+        color: $white;
+        background: $primary;
+        border: 1px solid $primary-light;
+        font-weight: 600;
+        padding: 4px 13px;
+        border-radius: 36px;
+        margin: 450px auto 10px auto;
+        @media #{$desktop-smaller} {
+            margin: 350px auto 10px auto;
+        }
+        @media #{$header} {
+            margin: 150px auto 10px auto;
+        }
+        @media #{$phone} {
+            margin: 120px auto 10px auto;
+        }
+        max-width: 100px;
+    }
+    .cardSlider__title {
+        font-family: $secondary-family;
+        color: $white;
+        @include fsz(36px);
+        line-height: 1.1;
+        width: 100%;
+        max-width: 360px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        text-transform: capitalize;
+        font-weight: 700;
+        margin: 0 auto;
+        z-index: 2;
+    }
+    .cardSlider__days {
+        font-family: $alt-family;
+        color: $white;
+        text-align: center;
+        @include fsz(18px);
+        font-weight: 600;
+        opacity: 0.75;
+        margin: 0 auto 30px auto;
+        max-width: 190px;
+        width: 100%;
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 220px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+.cardSlider__arrow {
+    padding: 37px 43px;
+    background-color: $secondary-light;
+    position: absolute;
+    top: 45%;
+    @media #{$phone} {
+        display: none;
+    }
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: {
+            image: url('uploads/buttonP.png');
+            size: cover;
+            repeat: no-repeat;
+        }
+        top: 0;
+        left: 0;
+    }
+}
+
+.cardSlider__arrow--left {
+    left: 0;
+    z-index: 2;
+}
+
+.cardSlider__arrow--right {
+    right: 0;
+}
+
+.button--slide {
+    @include fsz(26px);
+    color: $primary;
+    position: relative;
+}

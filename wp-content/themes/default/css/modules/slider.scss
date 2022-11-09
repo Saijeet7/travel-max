@@ -1,0 +1,111 @@
+.slider {
+    background: $primary;
+}
+
+.slider__content {
+    width: 100%;
+    max-width: 1000px;
+    height: 530px;
+    background: {
+        repeat: no-repeat;
+        size: cover;
+    }
+    position: relative;
+    margin: 0 15px;
+    &::before {
+        content: '';
+        width: calc(100% + 1px);
+        height: 20px;
+        display: block;
+        position: absolute;
+        background-image: url("data:image/svg+xml,%0A%3Csvg width='1601' height='21' viewBox='0 0 1601 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.166748 0.48999H1600.17V18.6884C1600.17 18.6884 1397.67 20.355 1389.17 20.4883C1380.67 20.6216 1314.17 12.994 1284.67 14.7195C1255.17 16.445 1171.17 20.355 1171.17 20.355L1011.17 17.8552C1011.17 17.8552 906.667 14.5221 889.667 14.5221C872.667 14.5221 768.167 18.6884 756.167 17.8552C744.167 17.0219 708.167 14.5221 694.167 12.0224C680.167 9.52257 597.167 14.5221 597.167 14.5221L558.167 15.3554L417.167 16.1887L320.167 18.6884L227.167 17.1886L137.167 20.355L51.1667 16.1887L0.166748 18.6884V0.48999Z' fill='%23203942'/%3E%3C/svg%3E%0A");
+        top: -1px;
+        left: -1px;
+        z-index: 4;
+    }
+    &::after {
+        content: '';
+        width: calc(100% + 1px);
+        height: 20px;
+        display: block;
+        position: absolute;
+        background-image: url("data:image/svg+xml,%0A%3Csvg width='1601' height='21' viewBox='0 0 1601 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.765381 20.5247H1600.77V2.32621C1600.77 2.32621 1398.27 0.659685 1389.77 0.526386C1381.27 0.393087 1314.77 8.02063 1285.27 6.29512C1255.77 4.5696 1171.77 0.659685 1171.77 0.659685L1011.77 3.15947C1011.77 3.15947 907.265 6.49251 890.265 6.49251C873.265 6.49251 768.765 2.32621 756.765 3.15947C744.765 3.99273 708.765 6.49251 694.765 8.9923C680.765 11.4921 597.765 6.49251 597.765 6.49251L558.765 5.65925L417.765 4.82599L320.765 2.32621L227.765 3.82607L137.765 0.659685L51.7654 4.82599L0.765381 2.32621V20.5247Z' fill='%23203942'/%3E%3C/svg%3E%0A");
+        bottom: 0;
+        left: -1px;
+        z-index: 4;
+    }
+}
+
+.slider__mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.17) 0%, rgba(0, 0, 0, 0.69) 100%, rgba(0, 0, 0, 0.8) 100%);
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.slider__content {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.slider__innerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 4;
+    p {
+        background: rgba(32, 57, 66, 0.36);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 95px;
+        font-family: $alt-family;
+        color: $white;
+        @include fsz(18px);
+        font-weight: 600;
+        padding: 17px 26px 17px 80px;
+        position: relative;
+        width: 100%;
+        max-width: 210px;
+        margin: 265px auto 15px auto;
+        z-index: 4;
+        strong {
+            @include fsz(14px);
+            opacity: 0.75;
+            margin-top: 4px;
+        }
+        &::before {
+            content: '';
+            width: 62px;
+            height: 62px;
+            position: absolute;
+            display: block;
+            top: 9px;
+            left: 8px;
+            background-image: url("data:image/svg+xml,%0A%3Csvg width='62' height='63' viewBox='0 0 62 63' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='31' cy='31.5247' r='31' fill='white'/%3E%3Cpath d='M26.6444 24.5247C26.2886 24.5247 26 24.7858 26 25.1078V25.1105V37.9388V37.9416C26 38.2635 26.2886 38.5247 26.6444 38.5247C26.7789 38.524 26.9095 38.4864 27.0183 38.4153L27.0198 38.4167L37.6238 32.0544C37.8527 31.9594 38 31.753 38 31.5247C38 31.2902 37.8451 31.0783 37.6057 30.9867L27.0198 24.6327H27.0183C26.9088 24.5623 26.7781 24.5247 26.6444 24.5247Z' fill='%23B99877'/%3E%3C/svg%3E%0A");
+        }
+    }
+}
+
+.slider__title {
+    font-family: $secondary-family;
+    text-align: center;
+    color: $white;
+    @include fsz(60px);
+    text-transform: capitalize;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    width: 100%;
+    max-width: 670px;
+    line-height: 1;
+    position: relative;
+    z-index: 4;
+    @media #{$header} {
+        @include fsz(48px);
+    }
+    @media #{$phone} {
+        @include fsz(34px);
+    }
+}
